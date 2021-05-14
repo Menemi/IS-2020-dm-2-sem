@@ -4,11 +4,16 @@
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{float}
+\usepackage{hyperref}
+\usepackage{xcolor}
 \usepackage[unicode, pdftex]{hyperref}
-\usepackage[left=2cm,right=2cm,
-    top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
+    
 \graphicspath{{pictures/}}
 \DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\definecolor{urlcolor}{HTML}{003bed}
+
+\hypersetup{pdfstartview=FitH, linkcolor=linkcolor,urlcolor=urlcolor, colorlinks=true}
 
 \begin{document}
     % ТИТУЛЬНИК
@@ -217,4 +222,10 @@
                 \begin{figure}[h!]
                     \fbox{\includegraphics[scale=0.1]{d32.jpg}}
                 \end{figure}
+    \vfill
+    \bigskip
+    \small
+    \begin{flushright}
+        \href{https://ru.overleaf.com/read/nhnmvfbjzwhf}{Код отчёта на Overleaf}
+    \end{flushright}
 \end{document}
